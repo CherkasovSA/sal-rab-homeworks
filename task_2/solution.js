@@ -38,13 +38,13 @@ function calcInvoice({sum, discountMinSum, discountPart, shippingFreeMinSum, shi
 
 
 	let totalSum = productsSum;
-      totalSum = (totalSum - discountSum);
-
+	totalSum = (totalSum - discountSum); 
+  
 	let shippingSum = calcShipping(totalSum, shippingFreeMinSum, shippingPrice); // не изменяйте эту строку!!!
-      totalSum = (totalSum + shippingSum);
+	totalSum = (totalSum + shippingSum);
 
 	let freeShipping;
-      freeShipping = !shippingSum;
+    freeShipping = !shippingSum;
    
 	
     // Конец решения задачи №2.3.
